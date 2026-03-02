@@ -1,8 +1,0 @@
-Install the following before running the application by typing in the following key words in the console:
-
-- npm install
-- npm install firebase
-- npm install react-icons
-- npm install react-router-dom
-- npm install @tanstack/react-table
-
