@@ -1,0 +1,74 @@
+.seeproducts-popupbtn {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    min-width: 200px;
+    border-radius: 20px;
+    background-color: #5db6a8;
+    border: none;
+}
+
+.seeproducts-popupbtn:hover {background-color: #97d9ef;}
+
+.seeproducts-popup-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    height: 100vh;
+    background-color: rgba(0,0,0,0.35);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.seeproducts-popup-content-inner{
+    position: relative;
+    padding: 32px;
+    width:100%;
+    max-width: 800px;
+    background-color: #dbfcf6;
+    place-content: center;
+    border-radius: 30px;
+    z-index: 2;
+}
+.HeaderConnector{
+    background-color: #81CCC0;
+    width: 800px;
+    height: 30px;
+    position: absolute;
+    top: 32px;
+    z-index: -1;
+}
+.seeproducts-popup-content-inner th{
+    font-size: 16px;
+    background-color: #81CCC0;
+    color: #dffffa;
+    padding-left: 6px;
+    border-collapse: collapse;
+    z-index: 4;
+}
+.seeproducts-exitbtn{
+    padding: 10px 20px;
+    font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 95px;
+  padding-right: 95px;
+  border-radius: 70px;
+  color: #2f6e6e;
+  background-color: #97d9ef;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.seeproducts-exitbtn:hover {
+    background-color: #68afc7;
+    color: #ffffff;
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Shanti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shanti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Shanti&family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Comme:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Shanti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.RoundedCorners{
+  width: 1420px;
+  height: 54px;
+  background-color: #6fc2b5;
+  position: absolute;
+  top: 82px;
+  border-radius: 6px;
+}
+.RoundedCorners2{
+  width: 1420px;
+  height: 674px;
+  background-color: #ddfdfd;
+  position: absolute;
+  top: 138px;
+  border-radius: 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top: 2px solid #0b3333;
+
+}
+.AddOrderContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 46px;
+  background-color: #7FCDC1;
+  position: absolute;
+  top: 680px;
+  border-radius: 70px;
+  margin-right: 600px;
+}
+.ViewExcessContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 46px;
+  background-color: #7FCDC1;
+  position: absolute;
+  top: 2680px;
+  border-radius: 70px;
+  margin-left: 600px;
+}
+
+.ViewExcessContainer button{
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 95px;
+  padding-right: 95px;
+  border-radius: 70px;
+  color: #ebfdfd;
+  background:none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.AddOrderContainer button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 95px;
+  padding-right: 95px;
+  border-radius: 70px;
+  color: #ebfdfd;
+  background:none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  
+}
+.OrderLogBase{
+  position:static;
+  display: flex; 
+  color: rgb(0, 0, 0);
+  background-color: #E5FFFF;
+  height: 100vh;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.OrderLogContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.OrderLogTable {
+  
+  width: 100%;
+  top: 85px;
+  max-width: 1500px;
+  border-collapse: collapse;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  table-layout: fixed;
+  z-index: 2;
+}
+
+.OrderLogTableHeader th {
+  width: 226px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ebfdfd;
+  background-color: #6fc2b5;
+  border-bottom: 2px solid #103f3f;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 7px;
+  text-align: justify;
+
+}
+
+.OrderLogTableBody td {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  width: 227px;
+  border-bottom: 1px solid #b6dfdf;
+  height: 58px;
+  padding-left: 7px;
+  text-align: justify;
+}
+
+.PaginationContainer{
+  position: fixed;
+  top: 660px;
+  margin-top: 2%;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.prevPageButton {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #288181;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.PaginationContainer button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #288181;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.PaginationContainer button:disabled{
+  color: #ade9e9;
+  pointer-events: none;
+}
+
+.Pagination {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  margin-top: 2px;
+  text-align: center;
+}

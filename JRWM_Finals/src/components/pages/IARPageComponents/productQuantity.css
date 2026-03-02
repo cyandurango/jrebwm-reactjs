@@ -1,0 +1,66 @@
+.SideContainer {
+    background-color: #81ccc0;
+    width: 350px;
+    height: 500px;
+    position: fixed;
+    top: 175px;
+    right: 50px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.LowQuanButton,
+.HighQuanButton {
+    font-family: "Quicksand", sans-serif;
+    background-color: #e5ffff;
+    padding: 10px 20px;
+    margin-left: 22px;
+    margin-right: 10px;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 305px;
+    height: 40px;
+    border: none;
+    background: #e5ffff;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.LowQuanButton:hover,
+.HighQuanButton:hover {
+    border: none;
+    box-shadow: inset 6px 6px 6px -1px #b2d9d9, inset -10px -10px 10px -1px #e9ffff;
+}
+
+.LowQuanButton:focus,
+.HighQuanButton:focus {
+    border: none;
+    box-shadow: inset 10px 10px 10px -1px #b2d9d9, inset -10px -10px 10px -1px #e9ffff;
+    outline-width: 0px;
+}
+
+.modal-content {
+    background-color: #288181;
+    border-radius: 10px;
+    width: 88%;
+    margin-left: 17px;
+    font-family: "Quicksand", sans-serif;
+    color: #aae3e3;
+    padding: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 150px;
+    right: 27px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #aae3e3;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #000;
+}

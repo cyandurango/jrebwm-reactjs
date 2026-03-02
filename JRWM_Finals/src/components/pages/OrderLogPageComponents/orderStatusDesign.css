@@ -1,0 +1,81 @@
+/* Dropdown Button */
+.orderStatus-dropbtn {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: rgb(252, 252, 252);
+  font-size: 16px;
+  min-width: 150px;
+  background-color: #6FC2B5;
+  border: none;
+  z-index: 4;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.orderStatus-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.orderStatus-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6FC2B5;
+  min-width: 159px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  top: 32px;
+  z-index: 1000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.orderStatus-dropdown-content a {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 16px;
+  margin-top: 4px;
+  padding: 4px 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.orderStatus-dropbtn:disabled {
+  background-color: rgb(241, 225, 225); /* Gray for disabled state */
+  cursor: not-allowed;
+}
+
+/* Ensure dropdown content is hidden if the button is disabled */
+.orderStatus-dropdown.disabled .orderStatus-dropdown-content {
+  display: none !important;
+}
+
+/* Change color of dropdown links on hover */
+.orderStatus-dropdown-content a:hover {
+  color: red;
+}
+
+/* Show the dropdown menu on hover */
+.orderStatus-dropdown:hover .orderStatus-dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.orderStatus-dropdown:hover .orderStatus-dropbtn 
+{
+  background-color: #42a395;
+  color: black;
+}
+
+/* Ensure the hover effect does not apply when disabled */
+.orderStatus-dropdown.disabled .orderStatus-dropbtn {
+  background-color: rgb(13, 167, 108); /* Gray for disabled state */
+  pointer-events: none;
+}

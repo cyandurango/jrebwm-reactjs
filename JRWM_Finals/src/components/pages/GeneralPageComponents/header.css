@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to top, #389a9a, #288181);
+    z-index: 5000;
+}
+
+.leftSection {
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inventory-sys-icon {
+    height: 70px;
+}
+
+.brand-name {
+    font-family: "Quicksand", sans-serif;
+    font-size: 35px; 
+    color: #aae3e3; 
+    margin-left: -10px;
+}
+
+.middleSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightSection {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.homepage-button {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 20px; 
+    color: #aae3e3;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #389a9a, #288181);
+    border: none;
+    padding: 20px 30px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.homepage-button-text {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.homepage-button-text::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #aae3e3;
+    transition: width 0.3s;
+}
+
+.homepage-button:hover .homepage-button-text::after {
+    width: 100%;
+}
+
+.homepage-button:hover .homepage-button-text {
+    transform: scale(1.1);
+}
+
+.homepage-button:hover span {
+    transform: scale(1.1);
+}
+
+.homepage-button:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5) inset;
+    background: linear-gradient(to top, #73b4a9, #81ccc0);
+}
+
+.inventory-button {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 20px; 
+    color: #aae3e3;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #389a9a, #288181);
+    border: none;
+    padding: 20px 30px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.inventory-button-text {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.inventory-button-text::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #aae3e3;
+    transition: width 0.3s;
+}
+
+.inventory-button:hover .inventory-button-text::after {
+    width: 100%;
+}
+
+.inventory-button:hover .inventory-button-text {
+    transform: scale(1.1);
+}
+
+.inventory-button:hover span {
+    transform: scale(1.1);
+}
+
+.inventory-button:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5) inset;
+    background: linear-gradient(to top, #73b4a9, #81ccc0);
+}
+
+.report-analysis-button {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 20px; 
+    color: #aae3e3;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #389a9a, #288181);
+    border: none;
+    padding: 20px 30px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.report-analysis-button-text {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.report-analysis-button-text::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: #aae3e3;
+    transition: width 0.3s;
+}
+
+.report-analysis-button:hover .report-analysis-button-text::after {
+    width: 100%;
+}
+
+.report-analysis-button:hover .report-analysis-button-text {
+    transform: scale(1.1);
+}
+
+.report-analysis-button:hover span {
+    transform: scale(1.1);
+}
+
+.report-analysis-button:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5) inset;
+    background: linear-gradient(to top, #73b4a9, #81ccc0);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    bottom: -30px;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+} 
+
+.notification-button {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px; 
+    color: #aae3e3; 
+    margin-right: 15px;
+    background: linear-gradient(to top, #389a9a, #288181);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+
+.notification-button:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5) inset;
+    background: linear-gradient(to top, #73b4a9, #81ccc0);
+}
+
+.notification {
+    height: 50px;
+}
+
+.logout-button {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px; 
+    color: #aae3e3; 
+    margin-right: 15px;
+    background: linear-gradient(to top, #389a9a, #288181);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+
+.logout-button:active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5) inset;
+    background: linear-gradient(to top, #73b4a9, #81ccc0);
+}
+
+.logout {
+    height: 50px;
+}
+
+.logout-text {
+    margin-right: 5px;
+}
+
+.active .homepage-button-text::after,
+.active .inventory-button-text::after,
+.active .report-analysis-button-text::after {
+    width: 100%;
+}
+
+.active .homepage-button-text,
+.active .inventory-button-text,
+.active .report-analysis-button-text {
+    transform: scale(1.1);
+}
+
+/*component ni piols*/
+
+.Navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.Links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.link {
+    color: #606060;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.link:hover {
+    color: #000;
+}
+
+.notification {
+    position: relative;
+    margin-left: auto;
+}
+
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    color: #606060;
+}
+
+.notification-icon:hover {
+    color: #000;
+}
+
+.counter {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: rgb(235, 81, 81);
+    color: white;
+    border-radius: 50%;
+    padding: 0 6px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5px; 
+    padding: 5px;
+    border-radius: 50%; 
+
+}
+
+.notification-case {
+    position: absolute;
+    top: 60px; /* Adjust this if the navbar height is different */
+    right: 0;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1300;
+    display: none;
+}
+
+.notification-case.open {
+    display: block;
+}
+
+.notificationMessage {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eee;
+}
+
+.notificationMessage ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notificationMessage li {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notificationMessage li:last-child {
+    border-bottom: none;
+}
+
+.deleteNotif {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.deleteNotif:hover {
+    color: #000;
+}
+
+
+ 
+
+
+

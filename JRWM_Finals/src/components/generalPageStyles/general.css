@@ -1,0 +1,126 @@
+body {
+    background-color: #b4d3d3;
+    margin: 0;
+}
+
+.ProductDatabaseContainer {
+    display: flex; 
+    color: rgb(0, 0, 0);
+    background-color: #a0d3d3;
+    height: 100vh;
+    z-index: 100;
+    position: static;
+    justify-content: center;
+    align-items: center;
+}
+
+.IARPageContainer {
+    display: flex; 
+    color: rgb(0, 0, 0);
+    background-color: #a0d3d3;
+    height: 100vh;
+    z-index: 100;
+    position: static;
+    justify-content: center;
+    align-items: center;
+}
+
+.WidthFlexContainer{
+    flex:1;
+    background-color: rgb(245, 222, 179,0);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+  
+.HeightFlexContainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 255,0);
+    flex:1;
+}
+  
+.ImaginaryWidth{
+    background-color: rgba(247, 5, 5, 0);
+    width: 10px;
+    height: 100%;
+}
+  
+.ImaginaryHeight{
+    background-color: rgb(238, 0, 0,0);
+    height: 10.9px;
+}
+
+.ProductContainer {
+    position: static;
+    width: 100%;
+    bottom: 0;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 400px;
+    min-width: 380px;
+    min-height: 250px;
+    z-index: auto;
+    background: #e2ffff;
+    box-shadow: 20px 20px 60px #b9d6d6, -20px -20px 60px #e5ffff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.IARContainer {
+    position: static;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    max-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 400px;
+    min-width: 380px;
+    min-height: 250px;
+    z-index: auto;
+    background: #e2ffff;
+    box-shadow: 20px 20px 60px #b9d6d6, -20px -20px 60px #e5ffff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between; /* Align tabs at the top */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.tab-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}

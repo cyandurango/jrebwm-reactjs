@@ -1,0 +1,79 @@
+.table {
+    width: 1152px;
+    border-collapse: collapse;
+    position: fixed;
+    top: 17.5%;
+    left: 50.4%;
+    transform: translateX(-50%);
+    table-layout: fixed;
+    align-content: end;
+    max-height: calc(100% - 400px);
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.table-header th {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #288181;
+    background-color: #81ccc0;
+    border-bottom: 2px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-body td.adj-width {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    max-width: 200px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.pagesContainer {
+    display: flex;
+    position: fixed;
+    justify-content: center; 
+    align-items: center;
+    bottom: 60px;
+    right: 43%;
+}
+
+.pagesContainer button:disabled {
+    color: #ade9e9;
+    pointer-events: none;
+}
+
+.pagination {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    margin-top: 2px;
+    text-align: center;
+}
+
+.prevPage {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #288181;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.nextPage {
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #288181;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
